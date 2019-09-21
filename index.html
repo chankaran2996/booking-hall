@@ -1,0 +1,363 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            #logbt{
+                margin-left: 1000;
+            }
+        </style>
+        <link rel="stylesheet" href="assects/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+        <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    </head>
+    <body>
+        <header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="navbar-brand" href="#">Logo</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Booking">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_us">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact_us">Contact us</a>
+              </li>
+              <li class="nav-item" id="logbt">
+                <button type="button" class="btn btn-info" data-toggle="modal" id="login-page" data-target="#myModal"><a href="main.html">Log In</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-info"><a href="./colorlib-regform-1/index.html">Register</a></button>
+              </li>
+            </ul>
+          </nav>
+          </header>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <div class="continer">
+                <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="H:\zen\Nasscom\assects\img\audi.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="H:\zen\Nasscom\assects\img\big hall.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="H:\zen\Nasscom\assects\img\hall4.jpg" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="H:\zen\Nasscom\assects\img\hall5.jpg" alt="fourth slide">
+                          </div>.
+                          
+                        </div>-->
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item">
+                                      <img src="H:\zen\Nasscom\assects\img\audi.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item active">
+                                    <img src="H:\zen\Nasscom\assects\img\hall4.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="H:\zen\Nasscom\assects\img\hall5.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                        <!--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>-->
+
+            </div>
+            <div class="container" id="Booking">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="#./booking.html#meeting_hall_1" style="color: black">
+                                <div class="box">
+                                    <div class="box-small">
+                                        <img src="H:\zen\Nasscom\assects\img\hall-1.jpg">
+                                    </div>
+                                    <div class="box-small1">
+                                        <h3>Type 1</h3>
+                                        <p>Max Team Size 20 members</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="#./booking.html#meeting_hall_2" style="color: black">
+                                <div class="box">
+                                    <div class="box-small">
+                                        <img src="H:\zen\Nasscom\assects\img\hall-2.jpg">
+                                    </div>
+                                    <div class="box-small1">
+                                        <h3>Type 2</h3>
+                                        <p>Max Team Size 30 members</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="#./booking.html#meeting_hall_3" style="color: black">
+                                <div class="box">
+                                    <div class="box-small">
+                                        <img src="H:\zen\Nasscom\assects\img\hall-3.jpg">
+                                    </div>
+                                    <div class="box-small1">
+                                        <h3>Type 3</h3>
+                                        <p>Max Team Size 40 members</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="#./booking.html#meeting_hall_4" style="color: black">
+                                <div class="box">
+                                    <div class="box-small">
+                                        <img src="H:\zen\Nasscom\assects\img\hall-4.jpg">
+                                    </div>
+                                    <div class="box-small1">
+                                        <h3>Type 4</h3>
+                                        <p>Max Team Size 50 members</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                </div>
+                <div class="container">
+                        <br>
+                        <hr>
+                        <br>
+                        <h2>Space For every meetings</h2>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Meeting Hall 1</h3>
+                                <img class="img-fluid" src="H:\zen\Nasscom\assects\img\hall3.jpg" height="240" style="position: static; z-index: -1;">
+                            </div>
+                            <div class="col-md-6" style="text-align: center;">
+                                <br>
+                                <br>
+                
+                                <h2>Facilities</h2>
+                                <br>
+                                <p>Can Accomodate 20 Members
+                                    <br>24X7 wifi
+                                    <br>Air conditioner</p>
+                                <br>
+                                <button type="button" class="btn btn-danger" onclick="window.location.href = './booking.html#meeting_hall_1';">View More</button>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center">
+                                <h3 style="text-align: left;">Meeting Hall 2</h3>
+                
+                
+                                <h2>Facilities</h2>
+                                <br>
+                                <p>Can Accomodate 30 Members
+                                    <br>24X7 wifi
+                                    <br>Air conditioner</p>
+                                <br>
+                                <button type="button" class="btn btn-danger" onclick="window.location.href = './booking.html#meeting_hall_2';">View More</button>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <br>
+                                <br>
+                                <img src="H:\zen\Nasscom\assects\img\hall4.jpg" class="img-fluid" style="position: static; z-index: -1;">
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Meeting Hall 3</h3>
+                                <img src="H:\zen\Nasscom\assects\img\big hall.jpg" class="img-fluid">
+                
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <br>
+                                <br>
+                
+                                <h2>Facilities</h2>
+                                <br>
+                                <p>Can Accomodate 40 members
+                                    <br>24X7 wifi
+                                    <br>Air conditioner</p>
+                                <br>
+                                <button type="button" class="btn btn-danger" onclick="window.location.href = './booking.html#meeting_hall_3';">View More</button>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>               
+             
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center">
+                                <h3 style="text-align: left;">Meeting Hall 4</h3>
+                                <h2>Facilities</h2>
+                                <br>
+                                <p>Can Accomodate 50 members
+                                    <br>24X7 wifi
+                                    <br>Air conditioner</p>
+                                <br>
+                                <button type="button" class="btn btn-danger" onclick="window.location.href = './booking.html#meeting_hall_4';">View More</button>
+                                <br>
+                            </div>
+                            <div class="col-md-6">
+                                <br>
+                                <br>
+                                <img src="H:\zen\Nasscom\assects\img\audi.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <h2 style="text-align: center">
+                                    Our Happy Customers
+                                </h2>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                
+                            <div class="col-md-4" style="text-align: center;">
+                                <img src="H:\zen\Nasscom\assects\img\markz.jpg" class="rounded-circle" style="width:90px;">
+                                <h3>
+                                    Mark Zuckerberg
+                                </h3>
+                                <p> CEO of Facebook</p>
+                                <p>We got a great service at CoSpace. Their ambience makes the person feel fresh and energetic.</p>
+                            </div>
+                
+                            <div class="col-md-4" style="text-align: center;">
+                                <img src="H:\zen\Nasscom\assects\img\bill.jpg" class="rounded-circle" style="width:90px; ">
+                                <h3>Bill Gates</h3>
+                                <p>Founder of microsoft Corporation</p>
+                                <p>We got a great service at CoSpace. Their ambience makes the person feel fresh and energetic.</p>
+                            </div>
+                
+                            <div class="col-md-4" style="text-align: center;">
+                                <img src="H:\zen\Nasscom\assects\img\sundar.jpg" class="rounded-circle" style="width:90px" style="text-align: left">
+                                <h3>Sundar Pichai</h3>
+                                <p>CEO of google</p>
+                                <p>We got a great service at CoSpace. Their ambience makes the person feel fresh and energetic.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                    </div>
+                
+                <div class="container" id="about_us">
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <h2 style="text-align: center;">About Us</h2>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8" style="text-align: center">
+                                <p> Built with love on Indian oil, we are a premium homegrown coworking solution provider that builds meeting
+                                    hall for businesses of all sizes. Our sole purpose is to bring together the largest community of working
+                                    professionals across the globe, fuel them with inspiration and connect them through technology. Our workspaces
+                                    empower people to express themselves freely as they do some of their life’s best work.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.74); color: white;" id="contact_us">
+                            <div class="container">
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-4">
+                                        <h2 style="text-align: center;">Contact Us</h2>
+                                    </div>
+                    
+                    
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h3>Contact Us</h3>
+                                        <br>
+                                        <p>CoSpace Pvt Ltd,
+                                            <br> IITM Research Park,
+                                            <br> Kanagam Road,
+                                            <br> Chennai.</p>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-4">
+                                        <h3 style="text-align: center">Location</h3>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7131557077582!2d80.23968821466167!3d12.990189490843697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d7d6641728d%3A0xddfdb15c6538d927!2sIIT+Madras+Research+Park!5e0!3m2!1sen!2sin!4v1559993654228!5m2!1sen!2sin"
+                                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+        <script>
+            function login(){
+                $("exampleModal").modal('show')
+            }
+        </script>
+    </body>
+</html>
